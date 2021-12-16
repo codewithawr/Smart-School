@@ -1,0 +1,24 @@
+first of all install mysql WorkBench from the WorkBench installer in this folder
+open cmd go to bin folder of mysql folder in database and past this comands [mysqld --initialize] press enter if it is taking morthen 5 minits press ctrl+C then past [mysqld --console] press enter
+open secound cmd and go to same bin folder and try to conect to server by   [mysql -u root -h localhost -p] press enter
+then enter pass in .err after "root@localhost:" file in data folder to Enter password:
+and then change password by 						    [alter user 'root'@'localhost' identified by 'your password';] press enter [exit] press enter to desconect
+and try to conect again with password you changed by 			    [mysql -u root -h localhost -p] press enter and enter the password you changed
+press ctrl+C in the first cmd and close it
+open new cmd as administrator and go to bin folder and enter 		    [mysqld --install "Mysql 8.0"]
+open services from windows search bar and find Mysql 8.0 and start it
+open pass.txt in main folder of softwer and write pass you make ther make shore nothin is in that file accept the password
+
+{
+if in case you want to remove a server in services stop the server then open a cmd as administrator go to bin path	[mysqld --remove "Mysql 8.0"] press enter 'instant of MySQL 8.0 you cam use any server name or mysql'
+for video https://www.youtube.com/watch?v=kaxrn_n7Jsg
+}
+
+then open "workbench" and add new conection by clicing on "+" botton name it press "ok" click on the conection you created and enter password
+now you are conected to server make new data base by right click on SCHEMAS area and creat schema and name it "school_manigement" click Apply again Apply then Finish
+
+click "Server" on top click on "data import" sleact "Import from Self-Contained File" give it the path of file in data bade .sql 
+then in Default Schema to be Imported To slact "school_manigement" or make new with name of "school_manigement" then click "Start Import"
+for cheacking on your left refrash the sehemas then expand "school_manigement" expand "Tables" if ther is three tables named (setting, staff_info, student_info) it's men all good
+
+for funt of clock you can downlode funt from (https://www.dafont.com/ds-digital.font)
