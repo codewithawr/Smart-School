@@ -569,7 +569,7 @@ class school_signature:
         self.Label_Time.place(x=82.5,y=45,height=30,anchor='center')
         time()
 
-if __name__ == '__main__':
-    data=['Abdul Wahab', '210901', '9']
-    print_fee_raside(Stud_data=data)
-    # print_fee_form('9')
+# if __name__ == '__main__':
+#     data=['Abdul Wahab', '210901', '9']
+#     print_fee_raside(Stud_data=data)
+#     # print_fee_form('9')
