@@ -367,6 +367,23 @@ def main():
         root.destroy()
 
 
+    def call_fileopen():
+        from module.file_opner import file_opner
+        
+        windo = Toplevel(root)
+        windo.title('Sc_Ma_Sy Student_Maniger')
+        windo.geometry('1530x790+0+0')
+        
+        windo.iconbitmap('LOGOS/main_icon.ico')
+        windo.resizable(False, False)
+        fo=file_opner(in_frame=windo)
+        windo.mainloop()
+        # tabe5 = Frame(tabs,width=1530,height=790)
+        # tabe5.place()
+        # tabs.add(tabe5,text='File Openr')
+        # sms = file_opner(in_frame=tabe5)
+        # tabs.select(tabe5)
+
 
     menubar = Menu(root)
     root.config(menu=menubar)
@@ -376,6 +393,8 @@ def main():
     menubar.add_cascade(label="File",menu=menu)
 
     menu.add_command(label='Exit',command=root.destroy)
+    
+    menu.add_command(label='Open File',command=call_fileopen)
 
 
     
@@ -403,8 +422,8 @@ def main():
     tabs = ttk.Notebook(root)
     tabs.place(x=0,y=0)
 
-    tabe1 = Frame(tabs,width=1530,height=790)
     tabe2 = Frame(tabs,width=1530,height=790)
+    tabe1 = Frame(tabs,width=1530,height=790)
     tabe3 = Frame(tabs,width=1530,height=790)
     tabe4 = Frame(tabs,width=1530,height=790)
 
@@ -499,7 +518,6 @@ def temp():
 lodint_frame.after(devi*1000,temp)
 root.after(devi//2,temp1)
 lodint_frame.mainloop()
-
 
 
 
